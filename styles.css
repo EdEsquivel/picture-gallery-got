@@ -1,0 +1,55 @@
+body {
+  box-sizing: border-box;
+  background-color: black;
+}
+
+@font-face {
+  font-family: "GOT";
+  src: url("fonts/GOT.ttf") format("truetype");
+}
+
+.container {
+  margin: auto;
+  padding: 20px;
+  width: 50%;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(45, 45, 45);
+  border: 2px solid black;
+  border-radius: 20px;
+}
+
+h1 {
+  font-family: "GOT";
+  text-align: center;
+  color: rgb(216, 196, 106);
+}
+
+section {
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  width: 650px;
+  height: 450px;
+  margin: 70px auto;
+  box-shadow: 0 0 20px 5px rgba(255, 215, 0, 0.6),
+    0 0 30px 10px rgba(255, 215, 0, 0.5), 0 0 40px 15px rgba(255, 215, 0, 0.3);
+}
+
+section img {
+  width: 0px;
+  flex-grow: 1;
+  object-fit: cover;
+  opacity: 0.6;
+  transition: 0.8s ease-in-out;
+  filter: grayscale(70%);
+}
+
+section img:hover {
+  cursor: crosshair;
+  width: 150px;
+  opacity: 1;
+  filter: contrast(120%);
+}
